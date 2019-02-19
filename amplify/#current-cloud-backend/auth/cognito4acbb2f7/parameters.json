@@ -1,0 +1,56 @@
+{
+    "identityPoolName": "googleauthdemo_identitypool_aa4f3c10",
+    "allowUnauthenticatedIdentities": true,
+    "thirdPartyAuth": false,
+    "lambdaLogPolicy": "googleauthdemo_lambda_log_policy",
+    "openIdLambdaRoleName": "googleauthdemo_openid_lambda_role",
+    "openIdRolePolicy": "googleauthdemo_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "googleauthdemo_openid_lambda_iam_policy",
+    "openIdLogPolicy": "googleauthdemo_openid_lambda_log_policy",
+    "userPoolName": "googleauthdemo_userpool_aa4f3c10",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "googleauthdemo_sns-role",
+    "roleExternalId": "googleauthdemo_role_external_id",
+    "policyName": "googleauthdemo-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Uppercase",
+        "Requires Numbers",
+        "Requires Symbols"
+    ],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "googleauthdemo_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "googleauthdemo_totp_lambda_role",
+    "mfaLambdaLogPolicy": "googleauthdemo_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "googleauthdemo_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "googleauthdemo_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "googleauthdemo_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "googleauthdemo_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "googleauthdemo_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "cognito4acbb2f7",
+    "unAuthRoleName": "googleauthdemo-20190219140417-unauthRole",
+    "authRoleName": "googleauthdemo-20190219140417-authRole",
+    "unAuthRoleArn": "arn:aws:iam::695364324672:role/googleauthdemo-20190219140417-unauthRole",
+    "authRoleArn": "arn:aws:iam::695364324672:role/googleauthdemo-20190219140417-authRole"
+}

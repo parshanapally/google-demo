@@ -2,10 +2,15 @@
   "name": "google-auth-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://myname.github.io/myapp",
   "dependencies": {
+    "@aws-amplify/cli": "^1.1.2",
+    "aws-amplify": "^1.1.19",
+    "aws-amplify-react": "^2.3.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "serve": "^10.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +26,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
