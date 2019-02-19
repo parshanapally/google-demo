@@ -1,0 +1,29 @@
+{
+    "paths": [
+        {
+            "name": "/api",
+            "lambdaArn": "arn:aws:lambda:us-east-1:695364324672:function:googleauthdemo-20190219125052-UserPoolClientLambda-3ZW3UXU6AMR2",
+            "lambdaFunction": "googleauthdemo-20190219125052-UserPoolClientLambda-3ZW3UXU6AMR2",
+            "privacy": {
+                "protected": true,
+                "auth": "rw",
+                "unauth": "r"
+            }
+        }
+    ],
+    "resourceName": "api",
+    "apiName": "googledemoeccb3143",
+    "functionArns": [
+        {
+            "lambdaFunction": "googleauthdemo-20190219125052-UserPoolClientLambda-3ZW3UXU6AMR2",
+            "lambdaArn": "arn:aws:lambda:us-east-1:695364324672:function:googleauthdemo-20190219125052-UserPoolClientLambda-3ZW3UXU6AMR2"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "googledemo-20190219152217-authRole",
+        "unAuthRoleName": "googledemo-20190219152217-unauthRole"
+    },
+    "dependsOn": []
+}

@@ -1,0 +1,52 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "googledemo-20190219152217-authRole",
+			"UnauthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190219152217-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190219152217-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "googledemo-20190219152217-deployment",
+			"UnauthRoleName": "googledemo-20190219152217-unauthRole",
+			"StackName": "googledemo-20190219152217",
+			"StackId": "arn:aws:cloudformation:us-east-1:695364324672:stack/googledemo-20190219152217/497b8b90-348c-11e9-9f71-12ff035a5bdc"
+		}
+	},
+	"auth": {
+		"cognito93911061": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/googledemo-20190219152217-deployment/amplify-cfn-templates/auth/cognito93911061-cloudformation-template.yml",
+				"logicalId": "authcognito93911061"
+			},
+			"lastPushTimeStamp": "2019-02-19T21:29:04.995Z",
+			"output": {
+				"AppClientSecret": "rqr51t15hqkfogqfp5gakkbni7g1qnqfb3pcajdak02t6j5qiq3",
+				"UserPoolId": "us-east-1_fvQJMqOVm",
+				"AppClientIDWeb": "70mbqlrkmlkcv1pspmkodstg9h",
+				"AppClientID": "7jhh8294nefu66en8f105ruoq4",
+				"IdentityPoolId": "us-east-1:6690e6dc-448a-4667-a901-ad018586f446",
+				"IdentityPoolName": "googledemo_identitypool_a9c610c9",
+				"UserPoolName": "googledemo_userpool_a9c610c9"
+			},
+			"lastPushDirHash": "CjzezcSlH5Zm8yS2qZ+K2bCa6Uw="
+		}
+	},
+	"api": {
+		"api": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/googledemo-20190219152217-deployment/amplify-cfn-templates/api/api-cloudformation-template.json",
+				"logicalId": "apiapi"
+			},
+			"lastPushTimeStamp": "2019-02-19T21:29:04.995Z",
+			"output": {
+				"ApiName": "api",
+				"RootUrl": "https://w6wqe2x608.execute-api.us-east-1.amazonaws.com/Prod"
+			},
+			"lastPushDirHash": "V2hmhofE2JKKLcOn9TuG7k80sKo="
+		}
+	}
+}
