@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Nav } from "react-bootstrap";
-import { AuthenticatedUserButtons, GuestButtons } from "../UserButtons/index";
 
 const NavHeader = props => {
   return (
