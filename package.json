@@ -5,8 +5,11 @@
   "homepage": "http://myname.github.io/myapp",
   "dependencies": {
     "@aws-amplify/cli": "^1.1.2",
+    "@blueprintjs/core": "^3.13.0",
     "aws-amplify": "^1.1.19",
     "aws-amplify-react": "^2.3.0",
+    "aws4": "^1.8.0",
+    "history": "^4.7.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5",

@@ -2,7 +2,7 @@
     "paths": [
         {
             "name": "/api",
-            "lambdaFunction": "lambdaApi",
+            "lambdaFunction": "demo",
             "privacy": {
                 "protected": true,
                 "auth": "rw",
@@ -11,22 +11,22 @@
         }
     ],
     "resourceName": "api",
-    "apiName": "googleauthdemob1e146c3",
+    "apiName": "googledemod64018a8",
     "functionArns": [
         {
-            "lambdaFunction": "lambdaApi"
+            "lambdaFunction": "demo"
         }
     ],
     "privacy": {
         "auth": 1,
         "unauth": 1,
-        "authRoleName": "googleauthdemo-20190219140417-authRole",
-        "unAuthRoleName": "googleauthdemo-20190219140417-unauthRole"
+        "authRoleName": "googledemo-20190220120559-authRole",
+        "unAuthRoleName": "googledemo-20190220120559-unauthRole"
     },
     "dependsOn": [
         {
             "category": "function",
-            "resourceName": "lambdaApi",
+            "resourceName": "demo",
             "attributes": [
                 "Name",
                 "Arn"

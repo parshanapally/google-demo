@@ -1,6 +1,6 @@
 {
-    "projectName": "googleauthdemo",
-    "projectPath": "C:\\Users\\parshanapally\\Desktop\\Googe auth demo\\google-auth-demo",
+    "projectName": "googledemo",
+    "projectPath": "C:\\Users\\parshanapally\\Desktop\\Googe auth demo\\google-demo",
     "defaultEditor": "code",
     "frontendHandler": {
         "javascript": "C:\\Users\\parshanapally\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-frontend-javascript"
@@ -8,7 +8,7 @@
     "javascript": {
         "framework": "react",
         "config": {
-            "SourceDir": "index.js",
+            "SourceDir": "src",
             "DistributionDir": "build",
             "BuildCommand": "npm.cmd run-script build",
             "StartCommand": "npm.cmd run-script start"

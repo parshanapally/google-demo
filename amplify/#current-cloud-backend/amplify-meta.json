@@ -1,83 +1,14 @@
 {
-	"providers": {
-		"awscloudformation": {
-			"AuthRoleName": "googleauthdemo-20190219140417-authRole",
-			"UnauthRoleArn": "arn:aws:iam::695364324672:role/googleauthdemo-20190219140417-unauthRole",
-			"AuthRoleArn": "arn:aws:iam::695364324672:role/googleauthdemo-20190219140417-authRole",
-			"Region": "us-east-2",
-			"DeploymentBucketName": "googleauthdemo-20190219140417-deployment",
-			"UnauthRoleName": "googleauthdemo-20190219140417-unauthRole",
-			"StackName": "googleauthdemo-20190219140417",
-			"StackId": "arn:aws:cloudformation:us-east-2:695364324672:stack/googleauthdemo-20190219140417/64811f00-3481-11e9-8fc7-0a7dfa8cb208"
-		}
-	},
-	"function": {
-		"lambdaApi": {
-			"service": "Lambda",
-			"providerPlugin": "awscloudformation",
-			"build": true,
-			"dependsOn": [],
-			"lastBuildTimeStamp": "2019-02-19T20:12:00.911Z",
-			"lastPackageTimeStamp": "2019-02-19T20:12:02.345Z",
-			"distZipFilename": "lambdaApi-1550607120-latest-build.zip",
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/googleauthdemo-20190219140417-deployment/amplify-cfn-templates/function/lambdaApi-cloudformation-template.json",
-				"logicalId": "functionlambdaApi"
-			},
-			"lastPushTimeStamp": "2019-02-19T20:14:34.332Z",
-			"output": {
-				"Region": "us-east-2",
-				"Arn": "arn:aws:lambda:us-east-2:695364324672:function:authenticateUsers",
-				"Name": "authenticateUsers"
-			},
-			"lastPushDirHash": "4ZOKoPy6/9ImSo589IW9DIi5q5w="
-		}
-	},
-	"auth": {
-		"cognito4acbb2f7": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation",
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/googleauthdemo-20190219140417-deployment/amplify-cfn-templates/auth/cognito4acbb2f7-cloudformation-template.yml",
-				"logicalId": "authcognito4acbb2f7"
-			},
-			"lastPushTimeStamp": "2019-02-19T20:14:34.332Z",
-			"output": {
-				"AppClientSecret": "cfbau4677o0787cr3njic8774hsk6ou6iljrirqutst737cpblp",
-				"UserPoolId": "us-east-2_eNO2P5Sy5",
-				"AppClientIDWeb": "7qft93vvafs0k88itb5bken18k",
-				"AppClientID": "557o39a3e3sns9n92kfma5apuo",
-				"IdentityPoolId": "us-east-2:ee4c754d-51ac-41e5-a806-d5657faf4ed0",
-				"IdentityPoolName": "googleauthdemo_identitypool_aa4f3c10",
-				"UserPoolName": "googleauthdemo_userpool_aa4f3c10"
-			},
-			"lastPushDirHash": "xhdzcPMNSrbEa0c5WAy8zjY0Efc="
-		}
-	},
-	"api": {
-		"api": {
-			"service": "API Gateway",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": [
-				{
-					"category": "function",
-					"resourceName": "lambdaApi",
-					"attributes": [
-						"Name",
-						"Arn"
-					]
-				}
-			],
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/googleauthdemo-20190219140417-deployment/amplify-cfn-templates/api/api-cloudformation-template.json",
-				"logicalId": "apiapi"
-			},
-			"lastPushTimeStamp": "2019-02-19T20:14:34.332Z",
-			"output": {
-				"ApiName": "api",
-				"RootUrl": "https://3ahos1c6o3.execute-api.us-east-2.amazonaws.com/Prod"
-			},
-			"lastPushDirHash": "LdHw0QVuXkRs+flpsaNbLgqb0dM="
-		}
-	}
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "googledemo-20190220120559-authRole",
+            "UnauthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220120559-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220120559-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "googledemo-20190220120559-deployment",
+            "UnauthRoleName": "googledemo-20190220120559-unauthRole",
+            "StackName": "googledemo-20190220120559",
+            "StackId": "arn:aws:cloudformation:us-east-1:695364324672:stack/googledemo-20190220120559/0733c780-353a-11e9-8907-0ae8cc519968"
+        }
+    }
 }

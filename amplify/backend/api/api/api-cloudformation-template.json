@@ -7,15 +7,15 @@
         
     
     
-          "functionlambdaApiName": {
+          "functiondemoName": {
             "Type": "String",
-            "Default": "functionlambdaApiName"
+            "Default": "functiondemoName"
           },
         
           
-          "functionlambdaApiArn": {
+          "functiondemoArn": {
             "Type": "String",
-            "Default": "functionlambdaApiArn"
+            "Default": "functiondemoArn"
           }
         
           
@@ -25,15 +25,15 @@
     "Resources": {
         
         
-        "PolicyAPIGWgoogleauthdemob1e146c3auth": {
+        "PolicyAPIGWgoogledemod64018a8auth": {
             "DependsOn": [
-              "googleauthdemob1e146c3"
+              "googledemod64018a8"
             ],
             "Type": "AWS::IAM::Policy",
             "Properties": {
-              "PolicyName": "PolicyAPIGWgoogleauthdemob1e146c3auth",
+              "PolicyName": "PolicyAPIGWgoogledemod64018a8auth",
               "Roles": [
-                "googleauthdemo-20190219140417-authRole"
+                "googledemo-20190220120559-authRole"
               ],
               "PolicyDocument": {
                 "Version": "2012-10-17",
@@ -61,7 +61,7 @@
                             },
                             ":",
                             {
-                              "Ref": "googleauthdemob1e146c3"
+                              "Ref": "googledemod64018a8"
                             },
                             "/Prod/*",
                             "/api/*"
@@ -82,7 +82,7 @@
                             },
                             ":",
                             {
-                              "Ref": "googleauthdemob1e146c3"
+                              "Ref": "googledemod64018a8"
                             },
                             "/Prod/*",
                             "/api"
@@ -104,15 +104,15 @@
         
         
           
-        "PolicyAPIGWgoogleauthdemob1e146c3unauth": {
+        "PolicyAPIGWgoogledemod64018a8unauth": {
             "DependsOn": [
-              "googleauthdemob1e146c3"
+              "googledemod64018a8"
             ],
             "Type": "AWS::IAM::Policy",
             "Properties": {
-              "PolicyName": "PolicyAPIGWgoogleauthdemob1e146c3unauth",
+              "PolicyName": "PolicyAPIGWgoogledemod64018a8unauth",
               "Roles": [
-                 "googleauthdemo-20190219140417-unauthRole"
+                 "googledemo-20190220120559-unauthRole"
               ],
               "PolicyDocument": {
                 "Version": "2012-10-17",
@@ -141,7 +141,7 @@
                             },
                             ":",
                             {
-                              "Ref": "googleauthdemob1e146c3"
+                              "Ref": "googledemod64018a8"
                             },
                             "/Prod/GET",
                             "/api/*"
@@ -162,7 +162,7 @@
                             },
                             ":",
                             {
-                              "Ref": "googleauthdemob1e146c3"
+                              "Ref": "googledemod64018a8"
                             },
                             "/Prod/GET",
                             "/api"
@@ -183,7 +183,7 @@
                             },
                             ":",
                             {
-                              "Ref": "googleauthdemob1e146c3"
+                              "Ref": "googledemod64018a8"
                             },
                             "/Prod/HEAD",
                             "/api/*"
@@ -204,7 +204,7 @@
                             },
                             ":",
                             {
-                              "Ref": "googleauthdemob1e146c3"
+                              "Ref": "googledemod64018a8"
                             },
                             "/Prod/HEAD",
                             "/api"
@@ -222,16 +222,16 @@
             }
           },
         
-      "googleauthdemob1e146c3": {
+      "googledemod64018a8": {
         "Type": "AWS::ApiGateway::RestApi",
         "Properties": {
           "Description": "",
-          "Name": "googleauthdemob1e146c3",
+          "Name": "googledemod64018a8",
           "Body": {
             "swagger": "2.0",
             "info": {
               "version": "2018-05-24T17:52:00Z",
-              "title": "googleauthdemob1e146c3"
+              "title": "googledemod64018a8"
             },
             "host": {
                 "Fn::Join": [
@@ -343,7 +343,7 @@
                             
                             {
                                 
-                                "Ref": "functionlambdaApiArn"
+                                "Ref": "functiondemoArn"
                             },
                             
                             "/invocations"
@@ -448,7 +448,7 @@
                           
                           {
                             
-                            "Ref": "functionlambdaApiArn"
+                            "Ref": "functiondemoArn"
                           },
                           
                           "/invocations"
@@ -505,12 +505,12 @@
                   
         
         
-        "functionlambdaApiPermissiongoogleauthdemob1e146c3": {
+        "functiondemoPermissiongoogledemod64018a8": {
             "Type": "AWS::Lambda::Permission",
             "Properties": {
                 "FunctionName": 
                     {
-                        "Ref":  "functionlambdaApiName"
+                        "Ref":  "functiondemoName"
                     },
                     
                     "Action": "lambda:InvokeFunction",
@@ -529,7 +529,7 @@
                             },
                             ":",
                             {
-                                "Ref": "googleauthdemob1e146c3"
+                                "Ref": "googledemod64018a8"
                             },
                             "/*/*/*"
                         ]
@@ -542,13 +542,13 @@
         
         
         
-      "DeploymentAPIGWgoogleauthdemob1e146c3": {
+      "DeploymentAPIGWgoogledemod64018a8": {
         "Type": "AWS::ApiGateway::Deployment",
         "Properties": {
           "Description": "The Development stage deployment of your API.",
           "StageName": "Prod",
           "RestApiId": {
-            "Ref": "googleauthdemob1e146c3"
+            "Ref": "googledemod64018a8"
           }
         }
       }
@@ -556,7 +556,7 @@
     "Outputs": {
         "RootUrl": {
             "Description": "Root URL of the API gateway",
-            "Value": {"Fn::Join": ["", ["https://", {"Ref": "googleauthdemob1e146c3"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/Prod"]]}
+            "Value": {"Fn::Join": ["", ["https://", {"Ref": "googledemod64018a8"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/Prod"]]}
         },
         "ApiName": {
           "Description": "API Friendly name",
