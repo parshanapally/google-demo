@@ -1,0 +1,14 @@
+{
+  "name": "google-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Pooja",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sinon": "^7.2.4"
+  }
+}
