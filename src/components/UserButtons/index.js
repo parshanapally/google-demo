@@ -15,8 +15,8 @@ const UserMenuItems = ({ signOut }) => {
 
 export const AuthenticatedUserButtons = ({ signOut }) => {
   return (
-    <Popover content={<UserMenuItems signOut={signOut} />}>
-      <Button icon="user" />
+    <Popover value={<UserMenuItems signOut={signOut} />}>
+      <Button />
     </Popover>
   );
 };

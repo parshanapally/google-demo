@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap";
+import {
+  AuthenticatedUserButtons,
+  GuestButtons
+} from "../components/UserButtons/index";
+import NavHeader from "./NavHeader";
 
 class Home extends Component {
   state = {
@@ -8,6 +13,15 @@ class Home extends Component {
 
   handleAuthChange = authenticated => {
     this.setState({ authenticated: authenticated });
+  };
+  handleAuthentication = () => {
+    if (this.state.authenticated) {
+      return (
+        <AuthenticatedUserButtons signOut={this.props.authStore.signOut} />
+      );
+    } else {
+      return <GuestButtons signIn={this.props.authStore.signIn} />;
+    }
   };
 
   componentWillMount() {
@@ -29,6 +43,10 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <NavHeader
+          value={this.state.authenticated}
+          handleAuthentication={this.handleAuthentication}
+        />
         <div className="center">
           <Button
             intent="success"
