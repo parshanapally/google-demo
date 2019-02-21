@@ -1,62 +1,35 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "googledemo-20190220120559-authRole",
-            "UnauthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220120559-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220120559-authRole",
-            "Region": "us-east-1",
-            "DeploymentBucketName": "googledemo-20190220120559-deployment",
-            "UnauthRoleName": "googledemo-20190220120559-unauthRole",
-            "StackName": "googledemo-20190220120559",
-            "StackId": "arn:aws:cloudformation:us-east-1:695364324672:stack/googledemo-20190220120559/0733c780-353a-11e9-8907-0ae8cc519968"
-        }
-    },
-    "function": {
-        "demo": {
-            "service": "Lambda",
-            "providerPlugin": "awscloudformation",
-            "build": true,
-            "dependsOn": [],
-            "lastBuildTimeStamp": "2019-02-20T18:07:36.048Z",
-            "lastPackageTimeStamp": "2019-02-20T18:07:37.056Z",
-            "distZipFilename": "demo-1550686056-latest-build.zip",
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/googledemo-20190220120559-deployment/amplify-cfn-templates/function/demo-cloudformation-template.json",
-                "logicalId": "functiondemo"
-            },
-            "lastPushTimeStamp": "2019-02-20T18:11:23.248Z"
-        }
-    },
-    "auth": {
-        "cognito88878aa8": {
-            "service": "Cognito",
-            "providerPlugin": "awscloudformation",
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/googledemo-20190220120559-deployment/amplify-cfn-templates/auth/cognito88878aa8-cloudformation-template.yml",
-                "logicalId": "authcognito88878aa8"
-            },
-            "lastPushTimeStamp": "2019-02-20T18:11:23.250Z"
-        }
-    },
-    "api": {
-        "api": {
-            "service": "API Gateway",
-            "providerPlugin": "awscloudformation",
-            "dependsOn": [
-                {
-                    "category": "function",
-                    "resourceName": "demo",
-                    "attributes": [
-                        "Name",
-                        "Arn"
-                    ]
-                }
-            ],
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/googledemo-20190220120559-deployment/amplify-cfn-templates/api/api-cloudformation-template.json",
-                "logicalId": "apiapi"
-            },
-            "lastPushTimeStamp": "2019-02-20T18:11:23.272Z"
-        }
-    }
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "googledemo-20190220123705-authRole",
+			"UnauthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220123705-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220123705-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "googledemo-20190220123705-deployment",
+			"UnauthRoleName": "googledemo-20190220123705-unauthRole",
+			"StackName": "googledemo-20190220123705",
+			"StackId": "arn:aws:cloudformation:us-east-1:695364324672:stack/googledemo-20190220123705/5f737f40-353e-11e9-aced-12557b211f7c"
+		}
+	},
+	"auth": {
+		"cognito01efd6a0": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/googledemo-20190220123705-deployment/amplify-cfn-templates/auth/cognito01efd6a0-cloudformation-template.yml",
+				"logicalId": "authcognito01efd6a0"
+			},
+			"lastPushTimeStamp": "2019-02-20T18:41:09.417Z",
+			"output": {
+				"AppClientSecret": "e770n0h851en74c25nisjbn7tkcoio2hugt8moquhnptef9dood",
+				"UserPoolId": "us-east-1_I2d6N5pC5",
+				"AppClientIDWeb": "1fl8ncr875qt7cs5jhhvgm41b3",
+				"AppClientID": "7ac4mnl9m2oi7e2l6q1pf2u0qj",
+				"IdentityPoolId": "us-east-1:a2ece547-0033-431a-9c9d-4e3ef15d69b0",
+				"IdentityPoolName": "cognito01efd6a0_identitypool_01efd6a0",
+				"UserPoolName": "cognito01efd6a0_userpool_01efd6a0"
+			},
+			"lastPushDirHash": "zuhPE8nmrZ8b9FgSnEnXojHjbqY="
+		}
+	}
 }

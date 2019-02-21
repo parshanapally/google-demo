@@ -4,10 +4,12 @@
   "private": true,
   "homepage": "http://myname.github.io/myapp",
   "dependencies": {
-    "@aws-amplify/cli": "^1.1.2",
+    "@aws-amplify/auth": "^1.2.15",
+    "@aws-amplify/cli": "^1.1.3",
     "@blueprintjs/core": "^3.13.0",
     "aws-amplify": "^1.1.19",
     "aws-amplify-react": "^2.3.0",
+    "aws-sdk": "^2.407.0",
     "aws4": "^1.8.0",
     "history": "^4.7.2",
     "react": "^16.8.2",

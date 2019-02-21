@@ -1,29 +1,13 @@
 import React, { Component } from "react";
-import { Router, Switch, Route, Redirect } from "react-router-dom";
-import Home from "./components/Home";
-import AuthStore from "./auth-store";
-import createBrowserHistory from "history/createBrowserHistory";
 
-const SignedOutCallback = () => {
-  return <Redirect to="/" />;
-};
+import awsconfig from "./aws-exports";
+import Auth from "@aws-amplify/auth";
 
-const history = createBrowserHistory();
-const authStore = new AuthStore(history);
+Auth.configure(awsconfig);
 
-const HomeWithAuthStore = () => {
-  return <Home authStore={authStore} />;
-};
 class App extends Component {
   render() {
-    return (
-      <Router>
-        <Switch>
-          <Route path="/signedout" component={SignedOutCallback} />
-          <Route path="/" component={HomeWithAuthStore} />
-        </Switch>
-      </Router>
-    );
+    return <div>Hello</div>;
   }
 }
 

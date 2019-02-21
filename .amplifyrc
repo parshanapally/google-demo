@@ -1,14 +1,14 @@
 {
     "providers": {
         "awscloudformation": {
-            "AuthRoleName": "googledemo-20190220120559-authRole",
-            "UnauthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220120559-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220120559-authRole",
+            "AuthRoleName": "googledemo-20190220123705-authRole",
+            "UnauthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220123705-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::695364324672:role/googledemo-20190220123705-authRole",
             "Region": "us-east-1",
-            "DeploymentBucketName": "googledemo-20190220120559-deployment",
-            "UnauthRoleName": "googledemo-20190220120559-unauthRole",
-            "StackName": "googledemo-20190220120559",
-            "StackId": "arn:aws:cloudformation:us-east-1:695364324672:stack/googledemo-20190220120559/0733c780-353a-11e9-8907-0ae8cc519968"
+            "DeploymentBucketName": "googledemo-20190220123705-deployment",
+            "UnauthRoleName": "googledemo-20190220123705-unauthRole",
+            "StackName": "googledemo-20190220123705",
+            "StackId": "arn:aws:cloudformation:us-east-1:695364324672:stack/googledemo-20190220123705/5f737f40-353e-11e9-aced-12557b211f7c"
         }
     }
 }
