@@ -1,0 +1,11 @@
+{
+    "appName": "googledemo",
+    "roleName": "pinpointLambdaRole5af6f976",
+    "cloudWatchPolicyName": "cloudWatchPolicy5af6f976",
+    "pinpointPolicyName": "pinpointPolicy5af6f976",
+    "authPolicyName": "pinpoint_amplify_5af6f976",
+    "unauthPolicyName": "pinpoint_amplify_5af6f976",
+    "authRoleName": "googledemo-20190220123705-authRole",
+    "unauthRoleName": "googledemo-20190220123705-unauthRole",
+    "IAMPrefix": "695364324672"
+}
