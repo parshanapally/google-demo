@@ -10,26 +10,31 @@ Storage.configure(awsconfig);
 
 class App extends Component {
   state = {
-    employee: [],
     isSaved: false
   };
   componentDidMount() {
-    let hours = 24; // Reset when storage is more than 24hours
-    let now = new Date().getTime();
+    let hours = 24;
+
+    let currentTime = new Date().getTime();
     let employeeKey = localStorage.getItem("key");
+
     if (employeeKey == null) {
-      localStorage.setItem("key", now);
-      this.setState({ isSaved: false });
+      localStorage.setItem("key", currentTime);
+      this.setState({ isSaved: true });
     } else {
-      if (now - employeeKey > hours * 60 * 60 * 1000) {
+      if (currentTime - employeeKey > hours * 60 * 60 * 1000) {
         localStorage.clear();
-        localStorage.setItem("key", now);
+        localStorage.setItem("key", currentTime);
         this.setState({ isSaved: true });
       }
     }
   }
   render() {
-    return <div>Hello</div>;
+    return (
+      <div>
+        <div>Hello</div>
+      </div>
+    );
   }
 }
 
