@@ -144,6 +144,21 @@
 					"IAMPrefix": "695364324672"
 				}
 			}
+		},
+		"storagegoogleauthdemo": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/googledemo-20190220123705-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"Parameters": {
+					"bucketName": "googledemo0412142ce4bb47b9957087f2f301a872",
+					"authPolicyName": "s3_amplify_dc4de214",
+					"unauthPolicyName": "s3_amplify_dc4de214",
+					"authRoleName": "googledemo-20190220123705-authRole",
+					"unauthRoleName": "googledemo-20190220123705-unauthRole",
+					"authPermissions": "rw",
+					"unauthPermissions": ""
+				}
+			}
 		}
 	},
 	"Outputs": {

@@ -7,7 +7,9 @@ const awsmobile =  {
     "aws_user_pools_id": "us-east-1_I2d6N5pC5",
     "aws_user_pools_web_client_id": "1fl8ncr875qt7cs5jhhvgm41b3",
     "aws_mobile_analytics_app_id": "cc4d63976d10410e83b102c9a3a4a765",
-    "aws_mobile_analytics_app_region": "us-east-1"
+    "aws_mobile_analytics_app_region": "us-east-1",
+    "aws_user_files_s3_bucket": "googledemo0412142ce4bb47b9957087f2f301a872",
+    "aws_user_files_s3_bucket_region": "us-east-1"
 };
 
 

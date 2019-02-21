@@ -19,7 +19,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/googledemo-20190220123705-deployment/amplify-cfn-templates/auth/cognito01efd6a0-cloudformation-template.yml",
 				"logicalId": "authcognito01efd6a0"
 			},
-			"lastPushTimeStamp": "2019-02-21T16:49:20.460Z",
+			"lastPushTimeStamp": "2019-02-21T17:25:11.815Z",
 			"output": {
 				"AppClientSecret": "e770n0h851en74c25nisjbn7tkcoio2hugt8moquhnptef9dood",
 				"UserPoolId": "us-east-1_I2d6N5pC5",
@@ -40,13 +40,29 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/googledemo-20190220123705-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
 				"logicalId": "analyticsgoogledemo"
 			},
-			"lastPushTimeStamp": "2019-02-21T16:49:20.465Z",
+			"lastPushTimeStamp": "2019-02-21T17:25:11.816Z",
 			"output": {
 				"appName": "googledemo",
 				"Region": "us-east-1",
 				"Id": "cc4d63976d10410e83b102c9a3a4a765"
 			},
 			"lastPushDirHash": "Uoo5aqPL5jPM67uO+nYGCrKsdk8="
+		}
+	},
+	"storage": {
+		"googleauthdemo": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/googledemo-20190220123705-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storagegoogleauthdemo"
+			},
+			"lastPushTimeStamp": "2019-02-21T17:25:11.820Z",
+			"output": {
+				"BucketName": "googledemo0412142ce4bb47b9957087f2f301a872",
+				"Region": "us-east-1"
+			},
+			"lastPushDirHash": "Q5q9zD0Q9/LUZKRE3QNClkKDW30="
 		}
 	}
 }

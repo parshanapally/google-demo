@@ -1,0 +1,9 @@
+{
+    "bucketName": "googledemo0412142ce4bb47b9957087f2f301a872",
+    "authPolicyName": "s3_amplify_dc4de214",
+    "unauthPolicyName": "s3_amplify_dc4de214",
+    "authRoleName": "googledemo-20190220123705-authRole",
+    "unauthRoleName": "googledemo-20190220123705-unauthRole",
+    "authPermissions": "rw",
+    "unauthPermissions": ""
+}
