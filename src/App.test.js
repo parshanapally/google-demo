@@ -16,8 +16,8 @@ describe("Given App", () => {
     },
     setItem: (key, currentTime) => {
       console.log(key);
-      // value = chance.hour() 60 * 60 * 1000;
-      currentTime.toString();
+      console.log(currentTime);
+
       return (store[key] = `${currentTime}`);
     },
     clear: () => {
@@ -49,19 +49,16 @@ describe("Given App", () => {
     expect(div).to.have.length(2);
   });
 
-  it("should default state", () => {
-    let component = renderComponent();
+  it("should contain the default state", () => {
     expect(component.state().isSaved).to.be.false();
   });
-  // it("should update isSaved to true when setItem is called", () => {
-  //   expect(component.state().isSaved).to.be.false();
-  //   localStorage.setItem();
-  //   expect(component.state().isSaved).to.be.true();
-  // });
 
   it("should call localStorage", () => {
     expect(localStorage).to.have.length(3);
     expect(localStorage).to.equal(localStorageMock);
   });
-  it("should getItem()", () => {});
+  // it("should clear item", () => {
+  //   localStorage.clear();
+  //   expect(localStorage.clear()).to.equal({});
+  // });
 });
