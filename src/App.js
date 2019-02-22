@@ -20,6 +20,7 @@ class App extends Component {
 
     if (employeeKey == null) {
       localStorage.setItem("key", currentTime);
+      console.log(currentTime);
       this.setState({ isSaved: true });
     } else {
       if (currentTime - employeeKey > hours * 60 * 60 * 1000) {
