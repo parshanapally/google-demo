@@ -2,16 +2,13 @@ import React from "react";
 import { expect } from "code";
 import { shallow } from "enzyme";
 import App from "./App";
-import Chance from "chance";
 
 describe("Given App", () => {
   let store = {};
   let component;
-  let chance = new Chance();
 
   const localStorageMock = {
     getItem: key => {
-      console.log(key);
       return store[key];
     },
     setItem: (key, currentTime) => {
@@ -57,8 +54,4 @@ describe("Given App", () => {
     expect(localStorage).to.have.length(3);
     expect(localStorage).to.equal(localStorageMock);
   });
-  // it("should clear item", () => {
-  //   localStorage.clear();
-  //   expect(localStorage.clear()).to.equal({});
-  // });
 });
